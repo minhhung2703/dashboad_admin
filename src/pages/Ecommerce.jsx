@@ -5,9 +5,9 @@ import { IoIosMore } from "react-icons/io";
 import { DropDownListComponent } from "@syncfusion/ej2-react-dropdowns";
 import { Stacked, Pie, Button, LineChart, SparkLine } from "../components";
 import { useStateContext } from "../contexts/ContextProvider";
-import { earningData } from "../data/dummy";
 
 // Data
+import { SparklineAreaData, earningData } from "../data/dummy";
 
 const Ecommerce = () => {
   const { currentColor, setCurrentColor } = useStateContext();
@@ -39,11 +39,11 @@ const Ecommerce = () => {
           </div>
         </div>
 
-        <div className="flex m-3 flex-wrap justify-center items-center gap-3 ">
+        <div className="flex m-3 flex-wrap justify-center items-center gap-1 ">
           {earningData.map((item) => (
             <div
               key={item.title}
-              className="bg-white h-44 dark:text-gray-200 dark:bg-secondary-dark-bg md:w-56 p-4 pt-9 rounded-2xl"
+              className="bg-white h-44 dark:text-gray-200 dark:bg-secondary-dark-bg md:w-40 p-4 pt-9 rounded-2xl"
             >
               <button
                 type="button"
@@ -57,7 +57,7 @@ const Ecommerce = () => {
               </button>
               <p className="mt-3">
                 <span className="text-lg font-semibold">{item.amount}</span>
-                <span className={`text-sm text-${item.pcColor} ml-2`}>
+                <span className={`text-sm  text-${item.pcColor} ml-2`}>
                   {item.percentage}
                 </span>
               </p>
@@ -82,7 +82,38 @@ const Ecommerce = () => {
                 <span>
                   <GoDotFill />
                 </span>
+                <span>Budget</span>
               </p>
+            </div>
+          </div>
+          <div className="mt-10 flex gap-10 flex-wrap justify-center">
+            <div className="border-r-1 border-color m-4 pr-10">
+              <div>
+                <p>
+                  <span className="text-3xl font-semibold">$93,438</span>
+                  <span className="p-1.5 hover:drop-shadow-xl cursor-pointer rounded-full text-white bg-green-400 ml-3">
+                    23%
+                  </span>
+                </p>
+                <p className="text-gray-500 mt-1 text-sm">Budget</p>
+              </div>
+              <div className="mt-8">
+                <p>
+                  <span className="text-3xl font-semibold">$93,438</span>
+                </p>
+                <p className="text-gray-500 mt-1 text-sm">Expense</p>
+              </div>
+              <div className="mt-5">
+                <SparkLine
+                  currentColor="blue"
+                  id="line-sparkline"
+                  type="Line"
+                  height="80px"
+                  width="250px"
+                  data={SparklineAreaData}
+                  color={currentColor}
+                />
+              </div>
             </div>
           </div>
         </div>
