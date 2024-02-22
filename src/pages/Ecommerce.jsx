@@ -5,7 +5,6 @@ import { IoIosMore } from "react-icons/io";
 import { DropDownListComponent } from "@syncfusion/ej2-react-dropdowns";
 import { Stacked, Pie, Button, LineChart, SparkLine } from "../components";
 import { useStateContext } from "../contexts/ContextProvider";
-
 // Data
 import { SparklineAreaData, earningData } from "../data/dummy";
 
@@ -111,9 +110,21 @@ const Ecommerce = () => {
                   height="80px"
                   width="250px"
                   data={SparklineAreaData}
-                  color={currentColor}
+                  color="black"
                 />
               </div>
+              <div className="mt-10">
+                <Button
+                  color="white"
+                  bgColor={currentColor}
+                  text="Download Report"
+                  borderRadius="10px"
+                  size="md"
+                />
+              </div>
+            </div>
+            <div>
+              <Stacked width="320px" height="360px" />
             </div>
           </div>
         </div>

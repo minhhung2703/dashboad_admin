@@ -23,7 +23,7 @@ const SparkLine = ({ id, height, width, color, data, type, currentColor }) => {
           visible: true,
         },
       }}
-      marketSettings={{ visible: ["All"], size: 2.5, fill: currentColor }}
+      markerSettings={{ visible: ["All"], size: 2.5, fill: currentColor }}
       dataSource={data}
       xName="x"
       yName="yval"
