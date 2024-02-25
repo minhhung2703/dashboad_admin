@@ -82,13 +82,11 @@ export default function App() {
                                 {/*Pages*/}
                                 <Route path="/orders" element={<Orders />} />
                                 <Route path="/employees" element={<Employees />} />
-                                <Route path="/customers" element={<Customers />} />
 
                                 {/*App*/}
                                 <Route path="/kanban" element={<Kanban />} />
                                 <Route path="/faq" element={<Faq />} />
                                 <Route path="/calendar" element={<Calendar />} />
-                                {/* <Route path="/color-picker" element={<ColorPicker />} /> */}
 
                                 {/*Chart*/}
                                 <Route path="/line" element={<Line />} />

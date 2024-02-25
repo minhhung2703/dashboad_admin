@@ -529,10 +529,6 @@ export const links = [
         name: 'employees',
         icon: <IoMdContacts />,
       },
-      {
-        name: 'customers',
-        icon: <RiContactsLine />,
-      },
     ],
   },
   {
@@ -547,13 +543,10 @@ export const links = [
         icon: <BsKanban />,
       },
       {
-        name: 'editor',
+        name: 'FAQ',
         icon: <FiEdit />,
       },
-      {
-        name: 'color-picker',
-        icon: <BiColorFill />,
-      },
+
     ],
   },
   {
