@@ -84,13 +84,13 @@ export default function App() {
                                 <Route path="/employees" element={<Employees />} />
 
                                 {/*App*/}
-                                <Route path="/kanban" element={<Kanban />} />
+                                {/* <Route path="/kanban" element={<Kanban />} /> */}
                                 <Route path="/faq" element={<Faq />} />
                                 <Route path="/calendar" element={<Calendar />} />
 
                                 {/*Chart*/}
                                 <Route path="/line" element={<Line />} />
-                                <Route path="/area" element={<Area />} />
+                                {/* <Route path="/area" element={<Area />} /> */}
                                 <Route path="/bar" element={<Bar />} />
                                 {/* <Route path="/pie" element={<Pie />} />
                                 <Route path="/financial" element={<Financial />} />

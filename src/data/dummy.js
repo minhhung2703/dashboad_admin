@@ -538,10 +538,10 @@ export const links = [
         name: 'calendar',
         icon: <AiOutlineCalendar />,
       },
-      {
-        name: 'kanban',
-        icon: <BsKanban />,
-      },
+      // {
+      //   name: 'kanban',
+      //   icon: <BsKanban />,
+      // },
       {
         name: 'FAQ',
         icon: <FiEdit />,
@@ -556,10 +556,10 @@ export const links = [
         name: 'line',
         icon: <AiOutlineStock />,
       },
-      {
-        name: 'area',
-        icon: <AiOutlineAreaChart />,
-      },
+      // {
+      //   name: 'area',
+      //   icon: <AiOutlineAreaChart />,
+      // },
 
       {
         name: 'bar',
